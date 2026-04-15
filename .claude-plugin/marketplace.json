@@ -1,15 +1,15 @@
 {
-  "name": "pragmatic-tools",
+  "name": "ax-public-plugins",
   "owner": {
     "name": "Seokjoon Yoon",
     "url": "https://github.com/Seokjoon-RIDI"
   },
-  "description": "Help non-developers transform vague ideas into clear, structured requirements before vibe coding. 요구사항 정리, 기획, PRD 작성을 도와주는 실무 도구 모음.",
+  "description": "AX팀 공개 플러그인 — 요구사항 정리(PRD), ralph-loop 프롬프트 생성 등 실무 도구 모음.",
   "plugins": [
     {
-      "name": "pragmatic-tools",
-      "description": "요구사항 정의, 기획, PRD 작성을 도와주는 실무 도구 — 비개발자도 vibe coding 전에 명확한 요구사항을 정리할 수 있도록 지원",
-      "source": "./plugins/pragmatic-tools"
+      "name": "ax-public-plugins",
+      "description": "PRD 작성, ralph-loop 프롬프트 생성 등 실무 도구 모음",
+      "source": "."
     }
   ]
 }
