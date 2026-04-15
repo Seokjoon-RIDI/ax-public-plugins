@@ -9,7 +9,7 @@
     {
       "name": "ax-public-plugins",
       "description": "PRD 작성, ralph-loop 프롬프트 생성 등 실무 도구 모음",
-      "source": "."
+      "source": "./"
     }
   ]
 }
