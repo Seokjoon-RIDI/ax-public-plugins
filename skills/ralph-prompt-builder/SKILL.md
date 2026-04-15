@@ -3,7 +3,7 @@ name: ralph-prompt-builder
 description: >
   Plan 문서를 입력받아 ralph-loop 실행용 프롬프트를 자동 생성한다.
   Plan 모드에서 작성된 구현 계획 문서(@mention)를 분석하여 완료 조건을 추출하고,
-  <promise></promise> 태그를 포함한 /ralph-loop 명령어를 포맷팅하여 출력한다.
+  <promise></promise> 태그를 포함한 /ralph-loop:ralph-loop 명령어를 포맷팅하여 출력한다.
   "ralph 프롬프트 만들어줘", "ralph-loop 돌릴 프롬프트", "plan을 ralph로",
   "이 플랜으로 ralph 돌리자", "ralph prompt", "ralph-loop prompt",
   "/ralph-prompt-builder", "플랜 문서 ralph", "구현 계획 ralph-loop으로",
@@ -13,7 +13,7 @@ description: >
 
 # Ralph Prompt Builder
 
-Plan 문서를 분석하여 `/ralph-loop` 실행 명령어를 생성하는 스킬.
+Plan 문서를 분석하여 `/ralph-loop:ralph-loop` 실행 명령어를 생성하는 스킬.
 
 Ralph Loop은 Claude가 동일한 프롬프트를 반복 수행하면서 이전 작업 결과(파일, git 히스토리)를 보고 점진적으로 개선하는 자기참조 반복 루프다. 이 스킬은 구조화된 Plan 문서에서 핵심 지시사항과 완료 조건을 추출하여, ralph-loop이 효과적으로 동작할 수 있는 프롬프트를 생성한다.
 
@@ -60,7 +60,7 @@ Plan에서 추출한 완료 조건들을 ralph-loop의 completion-promise와 호
 추출한 정보를 다음 구조로 조립한다:
 
 ```
-/ralph-loop "Implement plan @{plan-document}.md.
+/ralph-loop:ralph-loop "Implement plan @{plan-document}.md.
 
 When complete, verify ALL of the following:
 - [완료 조건 1]
@@ -87,7 +87,7 @@ Output: <promise>ALL_CRITERIA_MET</promise>" --max-iterations 10 --completion-pr
 **출력 예시 1 — API 구현 Plan:**
 
 ```
-/ralph-loop "Implement plan @api-implementation-plan.md.
+/ralph-loop:ralph-loop "Implement plan @api-implementation-plan.md.
 
 When complete, verify ALL of the following:
 - All CRUD endpoints return correct status codes (200, 201, 404)
@@ -101,7 +101,7 @@ Output: <promise>ALL_CRITERIA_MET</promise>" --max-iterations 10 --completion-pr
 **출력 예시 2 — 리팩토링 Plan:**
 
 ```
-/ralph-loop "Implement plan @refactor-auth-module.md.
+/ralph-loop:ralph-loop "Implement plan @refactor-auth-module.md.
 
 When complete, verify ALL of the following:
 - Legacy AuthMiddleware replaced with new JWTAuthService
@@ -115,7 +115,7 @@ Output: <promise>ALL_CRITERIA_MET</promise>" --max-iterations 10 --completion-pr
 **출력 예시 3 — 멀티페이즈 Plan:**
 
 ```
-/ralph-loop "Implement plan @e-commerce-mvp.md.
+/ralph-loop:ralph-loop "Implement plan @e-commerce-mvp.md.
 
 When complete, verify ALL of the following:
 - Phase 1: User auth with JWT — login/register/logout working, tests pass
