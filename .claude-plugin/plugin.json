@@ -1,7 +1,7 @@
 {
   "name": "pragmatic-tools",
-  "version": "1.0.0",
-  "description": "Help non-developers transform vague ideas into clear, structured requirements before vibe coding. 요구사항 정리, 기획, PRD 작성을 도와주는 실무 도구 모음.",
+  "version": "1.1.0",
+  "description": "Practical tools for planning and execution — requirement building, ralph-loop prompt generation, and more. 요구사항 정리, 기획, ralph-loop 프롬프트 생성을 도와주는 실무 도구 모음.",
   "author": {
     "name": "Seokjoon Yoon",
     "url": "https://github.com/Seokjoon-RIDI"
@@ -13,6 +13,9 @@
     "vibe-coding",
     "product-design",
     "PRD",
-    "non-developer"
+    "non-developer",
+    "ralph-loop",
+    "automation",
+    "iterative-development"
   ]
 }
