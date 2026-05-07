@@ -1,7 +1,7 @@
 {
   "name": "ax-public-plugins",
-  "version": "1.2.0",
-  "description": "AX팀 공개 플러그인 — 요구사항 정리(PRD), ralph-loop 프롬프트 생성 등 실무 도구 모음.",
+  "version": "1.3.0",
+  "description": "AX팀 공개 플러그인 — 요구사항 정리(PRD), ralph-loop 프롬프트 생성, 웹 크롤링 스크립트 빌더 등 실무 도구 모음.",
   "author": {
     "name": "Seokjoon Yoon",
     "url": "https://github.com/Seokjoon-RIDI"
@@ -13,6 +13,9 @@
     "PRD",
     "ralph-loop",
     "automation",
-    "iterative-development"
+    "iterative-development",
+    "web-scraping",
+    "crawler",
+    "data-collection"
   ]
 }
