@@ -3,6 +3,20 @@
 All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/).
 
+## [1.4.0] - 2026-05-11
+
+### Changed
+- `requirement-builder` 스킬을 비개발자 중심의 단순 워크플로우로 회귀.
+  - 4-Phase (Capture → Clarify → Structure → Review) 구조로 단순화.
+  - 직전 미릴리스 v2(codebase-grounded PRD) 변경분을 되돌림: Design 섹션(Data/API/Fallback), UX 섹션(User Stories/User Flow/Acceptance Criteria), Phase 2 코드베이스 분석 Stage A/B/C, Decisions Log 등을 제거.
+  - "What only, never How" 원칙 강조 — 기술 스택/구현/아키텍처는 다루지 않음.
+  - PRD 템플릿이 비개발자가 작성·검토 가능한 수준(Background / Goals / Target Users / Core Features / Detailed Requirements / User Stories / Constraints)으로 간소화.
+  - 저장 경로 템플릿: `docs/requirements/{project-name}-requirements.md`.
+
+### Rationale
+- 스킬 의도(비개발자가 vibe coding 전 "무엇을 만들 것인지" 정의)와 v2의 PRD 빌더 성격이 어긋나, 비개발자가 답하기 어려운 코드베이스 분석/Design 질문이 생성되는 문제 해소.
+- 코드베이스에 기반한 정밀 PRD는 별도 스킬에서 다루도록 분리(추후 검토).
+
 ## [1.3.0] - 2026-05-07
 
 ### Added
