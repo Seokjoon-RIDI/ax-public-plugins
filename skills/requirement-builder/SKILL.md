@@ -265,10 +265,10 @@ Ask user to review the Design section before proceeding to UX.
 3. Finalize Decisions Log
 4. Present full document for user review
 5. If feedback → incorporate and re-review (repeat)
-6. On approval → save to `docs/requirements/YYMMDD-PRD-by-skill-vX.XX.md`
+6. On approval → save to `docs/requirements/YYMMDD-PRD-{keyword}.md`
 7. **Suggest next steps**:
    ```
-   PRD 작성 완료: docs/requirements/YYMMDD-PRD-by-skill-vX.XX.md
+   PRD 작성 완료: docs/requirements/YYMMDD-PRD-{keyword}.md
 
    다음 단계로 추천드리는 작업:
    1. 백엔드 API 상세 설계 — 엔드포인트별 request/response 스펙
