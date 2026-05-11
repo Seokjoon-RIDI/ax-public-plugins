@@ -1,22 +1,6 @@
 ---
 name: web-crawl-script-builder
-description: >
-  Trigger whenever the user wants to repeatedly collect structured data from a website
-  — even if they don't explicitly say "crawler" or "scrape." Use when the user says
-  "크롤링 스크립트 만들어줘", "이 사이트 데이터 수집", "사이트에서 정보 모아줘",
-  "작품 1000개 정보 뽑아줘", "경쟁사 사이트 정보 수집", "대량 수집",
-  "scrape", "scraper", "crawler 만들어줘", "extract data from website",
-  "bulk data collection", "/web-crawl-script-builder", or describes any task with
-  the shape [target site] + [structured fields] + [repetition / volume]. Also trigger
-  proactively when the user vaguely asks "이 URL 100개에서 정보 좀 가져와줘" or
-  describes a one-by-one manual data gathering task that should clearly be
-  automated. The skill turns one exploratory browser session into a reusable
-  Python crawler and enforces safe scale-up gates (10 → 100 → 1000) with
-  explicit user approval to prevent IP bans, rate-limit violations, and silently
-  inconsistent extraction. NOT for one-off single-page lookups (just fetch the
-  page directly), private/auth-walled or paywalled data without explicit user
-  approval, or non-web data sources (databases, internal files, APIs the user
-  already has credentials for).
+description: Build a reusable Python crawler from one exploratory browser session, with safe 10→100→1000 scale-up gates. Use when user wants to collect structured data from a website repeatedly — "크롤링 스크립트", "사이트 데이터 수집", "작품 1000개 정보 뽑아줘", "scrape", "scraper", "crawler", "extract data from website", "bulk data collection", "/web-crawl-script-builder", or any [target site] + [structured fields] + [repetition/volume] task. Also trigger when user describes manual one-by-one gathering that should be automated. NOT for single-page lookups, auth-walled/paywalled data without approval, or non-web sources.
 ---
 
 # web-crawl-script-builder
